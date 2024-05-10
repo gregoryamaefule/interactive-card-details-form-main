@@ -181,7 +181,9 @@ input:active {
 
     }
     .card{
-        width: 88vw;
+        width: 84vw;
+        min-height: 260px;
+        background-size: cover;
 
     }
     #front{
