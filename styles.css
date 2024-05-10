@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.bg{
+    background-image: url("./images/bg-main-desktop.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    min-width: 555px;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin-left: 4vw;
+}
+
+.card{
+    width: 400px;
+    height: 36vh;
+    margin-left: 15vw;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+
+}
+.cn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: larger;
+    letter-spacing: 4px;
+    margin-top: 5%;
+}
+.dtcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-right: 3%;
+    font-weight: bold;
+}
+
+#front{
+    margin-right: 8vw;
+    background-image: url("./images/bg-card-front.png");
+}
+#back{
+    background-image: url("./images/bg-card-back.png");
+}
+
+form{
+    min-width: 350px;
+    width: 400px;
+    height: 100%;
+    padding: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+form>*{
+    flex-basis: 100%;
+    margin: 0;
+}
+label{
+    height: 1.2rem;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: hsl(278, 68%, 11%);
+}
+form>input, .hlf1>fieldset>input, .hlf2>input, button{
+    padding: 10px;
+    border: .6px solid hsl(270, 3%, 87%);
+    border-radius: 6px;
+}
+input::placeholder{
+    color:hsl(279, 6%, 55%)
+}
+form>.hlf1{
+    min-width: 0;
+    flex-basis: 47%;
+    margin-top: 10px;
+}
+form>.hlf2{
+    min-width: 0;
+    flex-basis: 47%;
+    margin-top: 10px;
+    
+}
+
+fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+.hlf2>input{
+    width: 100%;
+}
+form>.hlf1>label{
+    display: block;
+}
+form>.hlf2>label{
+    display: block;
+}
+label {
+    font-weight: bold;
+}
+#MM{
+    min-width: 0;
+    flex-basis: 46%;
+    margin: 0;
+    }
+#YY{
+    min-width: 0;
+    flex-basis: 46%;
+}
+button{
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(278, 68%, 11%);
+
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:active {
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+    .bg{
+        flex-direction: column;
+        background-image: url("./images/bg-main-mobile.png");
+        background-position: top;
+        background-size: contain;
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+    }
+    .container{
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: 100%;
+        margin: 5vh 0 0 0;
+        min-width: max-content;
+
+    }
+    .card{
+        width: 74vw;
+
+    }
+    #front{
+        margin-top: -17vh;
+        margin-right: 28vw;
+    }
+}

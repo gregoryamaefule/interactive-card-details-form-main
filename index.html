@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Card Details Form</title>
+  <script src="./index.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="bg">
+    <div class="container">
+      <div class="card" id="front">
+        <div class="logo">
+          <img src="./images/card-logo.svg" alt="">
+        </div>
+
+        <div class="cn">
+          <div id="cn1" class="cn">0000</div>
+          <div id="cn2" class="cn">0000</div>
+          <div id="cn3" class="cn">0000</div>
+          <div id="cn4" class="cn">0000</div>
+        </div>
+
+        <div class="dtcon">
+          <div class="dt" id="nme">JANE APPLESEED</div>
+          <div class="dt" id="">00/00</div>
+        </div>
+
+      </div>
+      <div class="card" id="back">
+        
+
+      </div>
+
+    </div>
+    <form action="" class="atm">
+      <label for="name">CARDHOLDER NAME</label>
+      <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+
+      <label for="Cardnumber">CARD NUMBER</label>
+      <input type="number" id="Cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+
+      <div class="hlf1">
+        <label for="datee">EXP. DATE (MM/YY)</label>
+        <fieldset id="datee">
+          <input type="number" id="MM" placeholder="MM">
+          <input type="number" id="YY" placeholder="YY">
+        </fieldset>
+      </div>
+
+      <div class="hlf2">
+        <label for="CVC">CVC</label>
+        <input type="number" id="CVC" placeholder="e.g. 123">
+      </div>
+
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+  
+</body>
+</html>
