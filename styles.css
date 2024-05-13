@@ -184,6 +184,7 @@ input:active {
     }
     .card{
         width: 360px;
+        max-height: 220px;
         background-size: cover;
         margin-left: 0;
 
